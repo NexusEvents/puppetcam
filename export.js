@@ -17,7 +17,8 @@ var options     = {
     '--load-extension=' + __dirname,
     '--disable-extensions-except=' + __dirname,
     '--disable-infobars',
-    '--force-device-scale-factor=1'
+    '--force-device-scale-factor=1',
+    '--executablePath=/usr/bin/chromium-browser'
   ],
 }
 
