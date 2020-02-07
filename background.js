@@ -34,7 +34,7 @@ chrome.runtime.onConnect.addListener(port => {
             recorder = new MediaRecorder(stream, {
                 videoBitsPerSecond: 5000000,
                 ignoreMutedMedia: true,
-                mimeType: 'video/webm',
+                mimeType: 'video/webm;codecs=vp9,opus',
             });
             recorder.ondataavailable = function (event) {
                 if (event.data.size > 0) {
